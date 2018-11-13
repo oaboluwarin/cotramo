@@ -6,15 +6,15 @@ describe('The sentence case method functionality', () => {
     const inputString = 'the NAME oF tHe Lord is a strong TOWEr.';
     const expectedResult = 'The name of the lord is a strong tower.';
 
-    console.log(inputString.toSentenceCase());
     expect(inputString.toSentenceCase()).to.equal(expectedResult);
+    done();
   });
 
   it('Ensures a string isn\'t more than 3 words', (done) => {
     const inputString = 'the NAME oF tHe Lord is a strong TOWEr.';
-    const expectedResult = 'The name of';
+    const expectedResult = 'the NAME oF';
 
-    console.log(inputString.triplify());
     expect(inputString.triplify()).to.equal(expectedResult);
+    done();
   });
 })
