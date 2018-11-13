@@ -2,7 +2,7 @@
 const { expect } = require('chai');
 require('./app');
 
-describe('The sentence case method functionality', () => {
+describe('The String Object extended', () => {
   it('Converts a string to sentence case', (done) => {
     const inputString = 'the NAME oF tHe Lord is a strong TOWEr.';
     const expectedResult = 'The name of the lord is a strong tower.';
