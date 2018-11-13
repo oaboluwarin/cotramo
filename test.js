@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 const { expect } = require('chai');
 require('./app');
 
@@ -30,20 +31,20 @@ describe('The sentence case method functionality', () => {
   });
 
   it('Strips a string of all punctuation marks', (done) => {
-    const sampleString = "Whence, if I may ask, are you going to?";
-    const expectedResult = "Whence if I may ask are you going to";
+    const sampleString = 'Whence, if I may ask, are you going to?';
+    const expectedResult = 'Whence if I may ask are you going to';
 
     expect(sampleString.removePunctuationMarks()).to.equal(expectedResult);
     done();
   });
 
   it('Returns the first word of an input string', (done) => {
-    const sampleString = "Speak, I pray you.";
-    const emptyString = " ";
+    const sampleString = 'Speak, I pray you.';
+    const emptyString = ' ';
 
     expect(sampleString.getFirstWord()).to.not.include(',');
     expect(sampleString.getFirstWord()).to.equal('Speak');
     expect(emptyString.getFirstWord()).to.equal('');
     done();
   });
-})
+});
