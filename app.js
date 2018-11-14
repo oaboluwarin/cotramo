@@ -14,7 +14,19 @@ String.prototype.triplify = function () {
 };
 
 String.prototype.isQuestion = function () {
-  const questionStarterWords = ['where', 'what', 'which', 'why', 'how', 'when', 'whom', 'who'];
+  const questionStarterWords = [
+    'where',
+    'what',
+    'which',
+    'why',
+    'how',
+    'when',
+    'whom',
+    'who',
+    'whence',
+    'whose',
+    'whomst'
+  ];
   const endsWithQuestionMark = this[this.length - 1] === '?';
   const wordsArray = this.split(' ');
   const startsWithQuestionStarter = questionStarterWords.find(word => wordsArray[0]
